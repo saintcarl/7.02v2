@@ -46,12 +46,18 @@ exploits/HEN/HEN.js
 exploits/HEN+Todex/index.html
 exploits/HEN+Todex/HEN+.js
 
+exploits/History-Blocker/index.html
+exploits/History-Blocker/History-Blocker.js
+
 
 exploits/Kernel-Clock/index.html
 exploits/Kernel-Clock/Kernel-Clock.js
 
-exploits/Linux/index.html
-exploits/Linux/Linux.js
+exploits/Linux-1GBVRAM/index.html
+exploits/Linux-1GBVRAM/Linux1.js
+
+exploits/Linux-3GBVRAM/index.html
+exploits/Linux-3GBVRAM/Linux3.js
 
 
 exploits/Mira/index.html
