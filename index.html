@@ -1,0 +1,158 @@
+<html manifest="cache.manifest">
+<head>
+<title>7.00-7.02 Exploit </title>
+<script>
+
+        window.applicationCache.ondownloading = function()
+        {
+            alert("Caching started !!")
+        };
+
+        window.applicationCache.onprogress = function(a)
+        {
+            document.getElementById("progress").innerHTML="<h3>Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completed</h3>";
+        };
+
+        window.applicationCache.oncached=function()
+        {
+            alert("Page Cached!!")
+        }; - Press Home Button";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+
+
+</head>
+<body style="background-color:#000000;color:yellow;">
+<h1 id=msgs style='font-size:40px;text-align:center;'>7.00-7.02 Exploit</h1>
+
+<center>
+
+  <a href="exploits/HEN/index.html">
+  <button>HEN 2.1.3</button>
+  
+  </a>
+  <a href="exploits/HEN+ToDex/index.html">
+  <button>HEN+ToDex</button>
+  
+  </a>
+  <a href="exploits/Mira/index.html">
+  <button>Mira</button>
+  
+  </a>
+  <a href="exploits/Mira-Beta/index.html">
+  <button>Mira-Beta</button>
+  
+  </a>
+
+   <br><br><br><br>
+<h1 style="font-size:30px;text-align:center;">Payloads</h1>
+   <a href="exploits/BinLoader/index.html">
+       <button>BinLoader(Chendochap)</button>
+ 
+   </a>
+ 
+ 
+  <a href="exploits/App2USB/index.html">
+       <button>App2USB</button>
+  
+   </a>
+  <a href="exploits/Backup/index.html">
+       <button>Backup Database</button>
+  
+   </a>
+
+
+  <a href="exploits/Restore/index.html">
+       <button>Restore Database</button>
+  
+   </a>
+    <a href="exploits/FTP/index.html">
+       <button>FTP</button>
+ 
+   </a>
+    <a href="exploits/ReactPS+/index.html">
+       <button>ReactPS+</button>
+ 
+   </a>
+
+  <a href="exploits/Linux-1GBVRAM/index.html">
+       <button>Linux 1GB VRAM</button>
+ 
+   </a>
+<br><br>
+  <a href="exploits/Linux-3GBVRAM/index.html">
+       <button>Linux 3GB VRAM</button>
+ 
+   </a>
+
+       
+   <a href="exploits/Dumper/index.html">
+       <button>Dumper</button>
+  
+   </a>
+  <a href="exploits/Enable-Updates/index.html">
+       <button>Enable Update</button>
+  
+   </a>
+  <a href="exploits/Disable-Updates/index.html">
+       <button>Disable Update</button>
+  
+   </a>
+
+   <a href="exploits/History-Blocker/index.html">
+       <button>History Blocker</button>
+  
+   </a>
+     </a>
+  <a href="exploits/todex/index.html">
+       <button>ToDex</button>
+ 
+   </a>
+
+
+  <a href="exploits/Kernel-Clock/index.html">
+       <button>Kernel Clock</button>
+ 
+   </a>
+  <a href="exploits/WebRTE/index.html">
+       <button>WebRTE</button>
+ 
+   </a>
+   </a>
+  <a href="exploits/PS4Debug/index.html">
+       <button>PS4Debug</button>
+ 
+   </a>
+  <br><br>
+  <a href="exploits/FanTreshold/index.html">
+       <button>Set Fan Treshold</button> 
+
+   </a>
+   <select id="tempC"></select>°C
+<br>
+   The PS4's default temp is 79°C
+
+<br><br><br>
+
+
+   <h1>if you have CE-30391-6 error use this payload</h1>
+  <a href="exploits/CE-30391-6_Fix/index.html">
+       <button>CE-30391-6 Fix</button>
+      
+   </a>
+
+
+
+  
+</center>
+<script>
+for(var i=40; i<=79; i++){
+    var select = document.getElementById("tempC");
+    var option = document.createElement("OPTION");
+	select.options.add(option);
+	option.text = i;
+	option.value = i;
+}
+tempC.value=60;
+</script>
+</body>
+<html>
