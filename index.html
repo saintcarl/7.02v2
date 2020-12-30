@@ -2,21 +2,8 @@
 <head>
 <title>7.00-7.02 Exploit </title>
 <script>
-
-        window.applicationCache.ondownloading = function()
-        {
-            alert("Caching started !!")
-        };
-
-        window.applicationCache.onprogress = function(a)
-        {
-            document.getElementById("progress").innerHTML="<h3>Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completed</h3>";
-        };
-
-        window.applicationCache.oncached=function()
-        {
-            alert("Page Cached!!")
-        }; - Press Home Button";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Downloading Cache: " + Percent + "%";}
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Installing Cache";},1000);setTimeout(function(){window.msgs.innerHTML="Offline Cache Installed✔ - Press Home Button";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
 
 
