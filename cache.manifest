@@ -72,6 +72,9 @@ exploits/Restore/Restore.js
 exploits/todex/index.html
 exploits/todex/todex.js
 
+exploits/VR/index.html
+exploits/VR/VR.js
+
 exploits/WebRTE/index.html
 exploits/WebRTE/webRTE.js
 
