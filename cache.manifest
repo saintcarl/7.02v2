@@ -21,6 +21,10 @@ exploits/CE-30391-6_Fix/ce-30391-6_fix.js
 exploits/ReactPS+/index.html
 exploits/ReactPS+/ReactPS+.js
 
+exploits/Spoofer/index.html
+exploits/Spoofer/Spoofer.js
+
+
 exploits/Disable-Updates/index.html
 exploits/Disable-Updates/Disable-Updates.js
 
@@ -62,6 +66,9 @@ exploits/Linux-3GBVRAM/Linux3.js
 
 exploits/Mira/index.html
 exploits/Mira/Mira.js
+
+exploits/MiraHen/index.html
+exploits/MiraHen/MiraHen.js
 
 exploits/Mira-Beta/index.html
 exploits/Mira-Beta/mirabeta.js
